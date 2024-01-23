@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="js/jquery-1.11.2.min.js"></script>		
+    <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ <style>
+.center img {width:100%;}
+.slick-center h3 {color: #e67e22;   opacity: 1; transform: scale(1.08);  }
+.center h3 {opacity: 0.8;transition: all 300ms ease;  margin: 10px;
+            padding: 2%; }
+
+ </style>   
+ <script>
+ $(function(){
+$('.center').slick({
+  centerMode: true,
+  autoplay:true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
+});
+ </script>
+</head>
+<body>
+  <ul class="slider center">
+    <li><h3><img src="slickimg/img1.jpg" alt=""></h3> </li>
+    <li><h3><img src="slickimg/img2.jpg" alt=""></h3> </li>
+    <li><h3><img src="slickimg/img1.jpg" alt=""></h3> </li>
+    <li><h3><img src="slickimg/img2.jpg" alt=""></h3> </li>
+    <li><h3><img src="slickimg/img1.jpg" alt=""></h3> </li>
+    <li><h3><img src="slickimg/img2.jpg" alt=""></h3> </li>
+    <li><h3><img src="slickimg/img1.jpg" alt=""></h3> </li>
+    <li><h3><img src="slickimg/img2.jpg" alt=""></h3> </li>
+    <li><h3><img src="slickimg/img1.jpg" alt=""></h3> </li>
+    <li><h3><img src="slickimg/img2.jpg" alt=""></h3> </li>
+    </ul>   
+    
+</body>
+</html>

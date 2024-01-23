@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.main {position:relative;}
+.main button {position:absolute; top:50%; z-index: 999; width:35px;
+              height:35px; border-radius: 100%; background: rgba(0,0,0,0.4);
+              border:none; outline: none;transform: translateY(-50%);}
+
+.main button::before {font-family: "xeicon";color:#fff; font-size: 20px;}
+.main button.slick-prev {left:50px; font-size: 0; color:transparent;}
+.main button.slick-prev:before {content:"\e93d";}
+.main button.slick-next {right:50px;font-size:0; color:transparent;}
+.main button.slick-next:before {content:"\e940";}
+.main {width:100%;}
+
+button.play { width:35px; height: 35px; font-size:0; background: transparent;
+              text-align: center;border:none;}
+button.play:before {content:"\ea3e"; font-family: "xeicon";
+                    color:#333; font-size: 25px;}   
+button.pause { width:35px; height: 35px; font-size:0; background: transparent;
+               text-align: center;border:none;}  
+button.pause:before {content:"\ea3b"; font-family: "xeicon";
+                     color:#333; font-size: 23px;}     

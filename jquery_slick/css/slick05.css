@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+body {font-size:0.75rem;}
+a {text-decoration:none; color:#666;}
+.slick-slide {margin:0 1px;}
+.slick-slide img {width:100%;}
+#box {width:90%; margin:0 auto; position:relative;}
+#banner_wrap {width:80%; margin:0 auto;}
+
+.slick-prev {position:absolute; left:0; top:50%; transform:translateY(-50%);}
+.slick-next {position:absolute; right:0; top:50%; transform:translateY(-50%);}
+span {display:block; margin:2px 0;}
+
+#box button.slick-prev {left:-3.5rem;font-size:0; color:#000;z-index:9999;
+                        background:none;border:none; }
+#box button.slick-prev:before {content:url(../slickimg/prev_btn.png);}   
+#box button.slick-next {right:-3.5rem;font-size:0;color:#000;z-index:9999;
+                        background:none;border:none;}
+#box button.slick-next:before {content:url(../slickimg/next_btn.png);}                        
+
+
+.slick-dots {position:absolute;bottom:-15px;left:50%;
+             transform:translateX(-50%);text-align:center;}
+.slick-dots li{width:15px;height:15px;display:inline-block;}             
+.slick-dots >li >button{font-size:0;color:#fff;
+                        width:10px;height:10px; border:none;
+                        background:#999; border-radius: 100%;}
+.slick-dots >li.slick-active button {background:#000;}            
