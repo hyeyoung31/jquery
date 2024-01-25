@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrme=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/colorbox.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.colorbox.js"></script>
+   <style>
+         #none {display:none;}
+     #cboxClose{background:none;
+                background:url(coloboximg01/controls.png) no-repeat 0 0;  
+                width:25px;height:25px;
+			    background-size:25px;}
+
+ul {width:60%; margin:4rem auto;}
+a {text-decoration:none; color:#333;}
+li {width:25%;float:left;box-sizing:border-box;padding-left:3px;}
+li img {width:100%;}
+li span {display:block; text-align:center;}
+   </style>
+   <script>
+    $(function(){
+     $('a').colorbox();
+	   $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+	   $(".inline").colorbox({inline:true, width:"50%"});
+	   $(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+     $(".iframe").colorbox({iframe:true, width:"50%", height:"55%"});
+    });
+     </script>
+</head>
+<body>  
+  <ul class="cf">
+    <li>
+      <a href="coloboximg01/list04.jpg">
+        <img src="coloboximg01/list01.jpg" alt="이미지1"><span>test1</span>
+      </a>
+    </li>
+    <li>
+      <a href="coloboximg01/list04.jpg">
+        <img src="coloboximg01/list02.jpg" alt="이미지1"><span>test1</span>
+      </a>
+    </li>
+    <li>
+      <a href="coloboximg01/list04.jpg">
+        <img src="coloboximg01/list03.jpg" alt="이미지1"><span>test1</span>
+      </a>
+    </li>
+    <li>
+      <a href="coloboximg01/list04.jpg">
+        <img src="coloboximg01/list04.jpg" alt="이미지1"><span>test1</span>
+      </a>
+    </li>
+    <li>
+      <a class='youtube' href="https://www.youtube.com/embed/KvSt5DnvUnk">
+        <img src="coloboximg01/cf.jpg" alt="video"><span>video1</span>
+      </a> 
+    </li>
+    <li>
+      <a class='youtube' href="https://www.youtube.com/embed/bZcnThVpcEA">
+        <img src="coloboximg01/cf.jpg" alt="video"><span>video2</span>
+      </a> 
+    </li>
+    <li>
+      <a class='vimeo' href="coloboximg01/nike.mp4">
+        <img src="coloboximg01/cf.jpg" alt="video"><span>video3</span>
+      </a> 
+    </li>
+    <li>
+      <a class='inline' href="#content">
+        <img src="coloboximg01/list02.jpg" alt="이미지2"><span>inline html</span> 
+      </a> 
+    </li>
+    <li>
+      <a class='iframe' href="hn.html">
+        <img src="coloboximg01/list04.jpg" alt="이미지4"><span>outside</span> 
+      </a> 
+    </li>
+  </ul>
+  <div id="none">
+    <div id="content">
+      <h1>test</h1>
+      <h2>test</h2>
+      <h3>test</h3>
+      <h4>test</h4>
+      <h5>test</h5>
+      <h6>test</h6>
+    </div>
+  </div>
+</body>
+</html>
