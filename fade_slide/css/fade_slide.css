@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+*,*:after,*:before {box-sizing:border-box;}
+.slideshow{ width:50%; position: relative; margin:3rem auto;}
+.pagination{ position: absolute; top: 101%; width: 100%;
+             display: flex; justify-content: center; }
+.pagination li{ font-size: 1rem; margin: 2px 4px; color: #ddd; cursor:pointer;}
+.slider li img{width:100%;}
+.left, .right{ position: absolute;top:0; height: 100%; display:flex;
+               align-items:center; z-index: 2; cursor:pointer;}
+.left {left:10px;}               
+.right {right:10px;}
