@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+  <p>Hello</p>
+  <a href="#">Click to hide me too</a>
+  <p>Here is another paragraph</p>
+<script>
+    $("p").hide();  //css display:none과 같음
+    $("a").click(function ( event ) {
+      event.preventDefault();
+      $(this).hide();
+    });
+
+    // hide()대신 fadeOut()을 쓰면 오퍼시티가 낮아지다가 마지막에 display:none이 걸린다
+</script>
+
+</body>
+</html>
