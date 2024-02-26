@@ -1,42 +1,63 @@
 <!doctype html>
 <html lang="ko">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>jq</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<style>
-		*,*:after,*:before {box-sizing:border-box;}
-		.box {width:80%; margin:0 auto;display:flex;flex-wrap:wrap;}
-		.item {	width:45%;height: 300px;margin: 50px auto;
-				padding-top: 75px;background: tomato;
-				text-align: center;color: #FFF;font-size: 3rem; }
+		*,
+		*:after,
+		*:before {
+			box-sizing: border-box;
+		}
+
+		.box {
+			width: 80%;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.item {
+			width: 45%;
+			height: 300px;
+			margin: 50px auto;
+			padding-top: 75px;
+			background: tomato;
+			text-align: center;
+			color: #FFF;
+			font-size: 3rem;
+		}
 	</style>
 </head>
+
 <body>
-<div class="box">
-<div class="item" data-aos="fade-up">fade-up</div>
-<div class="item" data-aos="fade-down">fade-down</div>
-<div class="item" data-aos="fade-right">fade-right</div>
-<div class="item" data-aos="fade-left">fade-left</div>
-<div class="item" data-aos="zoom-in">zoom-in</div>
-<div class="item" data-aos="zoom-out">zoom-out</div>
-<div class="item" data-aos="slide-up">slide-up</div>
-<div class="item" data-aos="flip-up">flip-up</div>
-<div class="item" data-aos="flip-down">flip-down</div>
-<div class="item" data-aos="flip-right">flip-right</div>
-<div class="item" data-aos="flip-left">flip-left</div>
-</div>
-<script>
-	AOS.init({
-	  duration: 1200,
-	})
-</script>
+	<div class="box">
+		<div class="item" data-aos="fade-up">fade-up</div>
+		<div class="item" data-aos="fade-down">fade-down</div>
+		<div class="item" data-aos="fade-right">fade-right</div>
+		<div class="item" data-aos="fade-left">fade-left</div>
+		<div class="item" data-aos="zoom-in">zoom-in</div>
+		<div class="item" data-aos="zoom-out">zoom-out</div>
+		<div class="item" data-aos="slide-up">slide-up</div>
+		<div class="item" data-aos="flip-up">flip-up</div>
+		<div class="item" data-aos="flip-down">flip-down</div>
+		<div class="item" data-aos="flip-right">flip-right</div>
+		<div class="item" data-aos="flip-left">flip-left</div>
+	</div>
+	<script>
+		AOS.init({
+			duration: 1200,
+		})
+	</script>
 
 </body>
+
 </html>
 
 
