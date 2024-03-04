@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>memeber 객체</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/ex04.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script>
+$(function(){
+	$("ul li img").click(function(){
+	$("#lightbox img").attr("src",$(this).attr("data-src"));
+	$("#lightbox").css("display","block");
+	});
+
+	$("#lightbox").click(function(){
+	$("#lightbox").css("display","none");
+	});	
+
+});
+</script>
+</head>
+<body>
+<div class="row">
+ <ul>
+	<li><img src="img/tree-1-thumb.jpg" data-src="img/tree-1.jpg" 
+		 class="pic"></li>
+	<li><img src="img/tree-2-thumb.jpg" data-src="img/tree-2.jpg" 
+		 class="pic"></li>		 
+	<li><img src="img/tree-3-thumb.jpg" data-src="img/tree-3.jpg" 
+		 class="pic"></li>
+	<li><img src="img/tree-4-thumb.jpg" data-src="img/tree-4.jpg" 
+		 class="pic"></li>
+	<li><img src="img/tree-5-thumb.jpg" data-src="img/tree-5.jpg" 
+		 class="pic"></li>
+	<li><img src="img/tree-6-thumb.jpg" data-src="img/tree-6.jpg" 
+		 class="pic"></li>		 			
+ </ul>
+</div>
+
+<div id="lightbox">
+	<img src="img/tree-1.jpg" alt="" id="lightboxImage">			
+</div>
+	
+
+
+
+
+</body>
+</html>
