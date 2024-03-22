@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>html5문서</title>
+		<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/gallery.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script>
+$(function(){
+
+   $("select").on("change",function(){
+	
+   const ab=$(this).val();
+  const $lis = $("ul>li");
+  
+const n = ab.substr(4,1) ;   
+
+      const sort = $lis.sort(function(a,b){
+        if(n==0){
+        
+        location.reload(true);
+                        
+   }
+
+        else if(n==1){
+
+
+
+return new Date($(a).find("span.date").text()) >new Date($(b).find("span.date").text()) ? -1:new Date($(a).find("span.date").text())<new Date($(b).find("span.date").text()) ? 1:0;
+
+
+}else if(n==2){
+        
+/*내림차순*/
+
+
+
+return parseInt(($(a).find("span.price").text()).replace(/[^0-9]/g,''))>parseInt(($(b).find("span.price").text()).replace(/[^0-9]/g,'')) ? -1:parseInt(($(a).find("span.price").text()).replace(/[^0-9]/g,''))<parseInt(($(b).find("span.price").text()).replace(/[^0-9]/g,'')) ? 1:0;
+
+
+}else{
+
+/*오름차순*/
+
+
+
+return parseInt(($(a).find("span.price").text()).replace(/[^0-9]/g,''))<parseInt(($(b).find("span.price").text()).replace(/[^0-9]/g,'')) ? -1:parseInt(($(a).find("span.price").text()).replace(/[^0-9]/g,''))>parseInt(($(b).find("span.price").text()).replace(/[^0-9]/g,'')) ? 1:0;
+
+
+}
+     
+        
+
+
+});
+$("#content ul").html(sort);
+});
+
+	});
+
+</script>
+</head>
+
+<body>
+<div class="search">
+   <select class="form" name="ff" id="ff">
+   <option value="case0">선택</option>
+       <option value="case1">최신순</option>
+    <option value="case2">높은가격</option>
+	 <option value="case3">낮은가격</option>
+	 
+   </select>
+   </div>
+
+<div id="content">
+<p class="depth">Home &gt; 자료실 &gt; <strong class="current">이미지 자료</strong></p>
+<h2><img src="img/h1_images.gif" alt="이미지 자료" /></h2> 
+
+ <ul>
+ <li><a href="#"><img src="img/imgpds_01.gif" alt="" /></a>
+ <span class="nn"><a href="#">이미지 갤러리1 </a></span><span class="date">2016/10/12</span> <span class="price">45,000원</span></li>
+<li><a href="#"><img src="img/imgpds_02.gif" alt="" /></a>
+<span class="nn"><a href="#">이미지 갤러리2 </a></span><span class="date">2016/11/15</span><span class="price">90,000원</span></li>
+<li><a href="#"><img src="img/imgpds_03.gif" alt="" /></a>
+ <span class="nn"><a href="#">이미지 갤러리3 </a></span><span class="date">2016/11/16</span><span class="price">30,000원</span>
+</li>
+<li><a href="#"><img src="img/imgpds_06.gif" alt="" /></a>
+<span class="nn"><a href="#">이미지 갤러리4 </a></span><span class="date">2016/11/17</span><span class="price">15,000원</span>
+</li>
+ <li>
+            <a href="#"><img src="img/img01.jpg" alt="" /></a>
+            <span class="nn"><a href="#">이미지 갤러리5 </a></span><span class="date">2016/11/18</span><span class="price">55,000원</span>
+</li>
+<li><a href="#"><img src="img/img02.jpg" alt="" /></a>
+<span class="nn"><a href="#">이미지 갤러리6 </a></span><span class="date">2016/11/19</span><span class="price">5,000원</span>
+</li>
+</ul>
+
+</div>
+  
+
+ 
+
+
+</body>
+</html>
