@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>swiper</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+	
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<link rel="stylesheet" href="css/reponsive.css" />
+	<script src="js/responsive.js"></script>
+</head>
+
+<body>
+
+	<h2>반응형</h2>
+	<!-- swiper 아닌 multiple에 슬라이드 걸어도 작동함, 단 css overflow:hidden 걸어줘야함 -->
+ 
+<section id="iconmenu">
+	<h1 class="hidden">아이콘메뉴</h1>
+<div class="swiper multiple">
+	<div class="swiper-wrapper">
+	  <img class="swiper-slide" src="images/img-1.jpg" alt="img-1">
+	  <img class="swiper-slide"  src="images/img-2.jpg" alt="img-2">
+	  <img class="swiper-slide" src="images/img-3.jpg" alt="img-3">
+	  <img class="swiper-slide" src="images/img-4.jpg" alt="img-4">
+	  <img class="swiper-slide" src="images/img-1.jpg" alt="img-1">
+	  <img class="swiper-slide"  src="images/img-2.jpg" alt="img-2">
+	  <img class="swiper-slide" src="images/img-3.jpg" alt="img-3">
+	  <img class="swiper-slide" src="images/img-4.jpg" alt="img-4">
+	</div>
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+
+</div>
+<div class="controls">
+	<span id="prev"><img src="images/swiper-button-prev.png"></span>
+	<span id="next"><img src="images/swiper-button-next.png"></span>
+</div>
+
+<div class="pager">
+	<span class="active"></span>
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+
+</section>
+
+
+</body>
+
+</html>                
