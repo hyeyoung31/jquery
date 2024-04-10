@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/jquery-1.11.2.min.js"></script>		
+<script>
+$(function (){
+	var $divs = $("div.group");
+  var OrderedDivs = $divs.sort(function (a, b) {
+      return $(a).find("p.name").text() < $(b).find("p.name").text() ? -1:
+      $(a).find("p.name").text()>$(b).find("p.name").text() ? 1:0;
+  });
+  $("#group").html(OrderedDivs);
+});
+ </script>
+</head>
+<body>
+<div id="group">
+    <div class="group">
+        <div class="info">
+            <p class="name">사과</p>
+            <p class="age">13</p>
+        </div>
+    </div>
+    <div class="group">
+        <div class="info">
+            <p class="name">고구마</p>
+            <p class="age">17</p>
+        </div>
+    </div>
+    <div class="group">
+        <div class="info">
+            <p class="name">바나나</p>
+            <p class="age">11</p>
+        </div>
+    </div>
+    <div class="group">
+        <div class="info">
+            <p class="name">오렌지</p>
+            <p class="age">19</p>
+        </div>
+    </div>
+</div>
+</div>	
+</body>
+</html>
