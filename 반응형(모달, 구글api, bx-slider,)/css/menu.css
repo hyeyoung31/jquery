@@ -1,0 +1,45 @@
+  @charset"utf-8";
+  
+  a {text-decoration:none;color:#131313;}
+  body{  font-family: 'Noto Sans', sans-serif; }
+ header{width:100%; z-index:10000;position:fixed;top:0;
+	/*background:#1d1f20; */background:#fff;
+	height:50px;line-height:50px; /*position:relative;*/}
+
+ header h2 {text-align:center;font-weight:normal;}
+
+ .s {  position:absolute;  top:9px; right:5px;}
+.hamburger{  background:none;
+  position:absolute;  top:0;  left:0;
+  line-height:45px;  padding:0px 15px 0px 15px;
+  color:#000;   border:0;
+  font-size:1.4em; font-weight:bold;
+  cursor:pointer; outline:none;  z-index:100000;  }
+
+.cross{
+background:none;
+  position:absolute;
+ right:3px;top:10px;
+  /*padding:0px 15px 0px 15px;*/
+  color:#fff;   border:0;   font-size:3.5em;
+  line-height:45px;    font-weight:bold;   cursor:pointer;
+  outline:none;   z-index:100000;  }
+  
+.menu{z-index:100000; font-weight:bold; font-size:0.8em; 
+height:100%;background:#131313; 
+ position:fixed;left:-200px;top:0px;width:200px; }
+.menu ul {margin: 0; padding: 0; padding-top:50px;height:100%;}
+.menu li {padding:10px 0 10px 0; border-bottom:#1d1f20 1px solid;position:relative;
+text-indent:20px;}
+.menu li img {position:absolute;right:10px;}
+.menu li:hover{background:#181818; /*padding:10px 0 10px 0;*/
+ border-bottom:#1d1f20 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
+.menu ul li a:hover {  color: #fff; text-decoration:none;}
+.menu ul li  ul {display:none;}
+.menu >ul> li>  ul> li {text-align:center;padding: 0;}
+.menu >ul> li>  ul> li>a{padding:3px 0 3px 0;display:block;}
+	
+	img {vertical-align:top;}
+
+

@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+*,*:after, *:before {box-sizing: border-box;}
+#main_image{width:100%; position:relative;overflow:hidden;}
+#main_image> ul.b2{position:relative; left:0; width:400%;	}
+#main_image> ul.b2> li { float:left; width:25%;}
+#main_image > ul.b2 >li >img{width:100%; min-height:200px;height:100%;}
+#arrow .prev {position:absolute;top:50%;left:0;z-index:9999;transform:translateY(-50%);} 
+ #arrow .next {position:absolute;top:50%;right:0;z-index:9999;transform:translateY(-50%);} 
+  
+ 	
+.title {font-size:1.2em;text-align:center;margin:3em 0;}	
+  
+  #banner_wrap{position:relative;width:70%;margin:5em auto;}
+#prevBtn{position:absolute;left:0;top:50%;}
+#nextBtn{position:absolute;right:0;top:50%;}
+#slide_banner li {text-align:center;}
+	#slide_banner span {display:block;margin:3px 0;}
+
+
+
+
+
+
+	
+		#book_roll{text-align:center;}
+	#book_roll>li {display:inline-block; padding-top:5px;}
+   #book_roll>li> a{display:block;}
+	
+
+
+  
+  
+  
+    section {width:95%;margin:0 auto;}
+	article{width:100%;}
+	article h2 {text-align:center;margin:1em 0;font-size:1.2em;}
+	article ul{overflow:hidden; padding-left:0%;}
+	article ul li{float:left;width:50%;text-align:center;}
+	article ul li img{width:100%;max-width:95%;}
+
+ 
+	
+	
+	
+	
+	
+	
+	
+	#imgbox {width:100%;margin:2em 0;}
+	#imgbox img {width:100%;}
+	
+	
+	#new {width:60%;margin:0 auto;}
+	#new ul{overflow:hidden; width:100%;}
+	#new ul li {float:left;width:50%;padding-right:1px;}
+/* 	#new ul padding-right:1pxli:nth-child(2n){;box-sizing:border-box;} */
+	#new ul li img {width:100%;}
+	#new ul li:nth-child(1){width:100%;}
+	
+	#back {width:100%;margin:4em 0;}
+	#back img {width:100%;}
+	
+	
+	
+	
+	
+	
+	
+	/*#top {text-align:center;}*/
+	
+	#bot {width:100%;color:#fff;margin:2em 0;}
+	#bot p {position:relative;background:#333;height:3.5em;line-height:3.5em;
+	text-indent:30px;border-bottom:1px solid #191919;cursor:pointer;}
+	#bot p img {position:absolute;right:30px;top:30%;}
+		
+	#bot ul {background:#333;	text-indent:30px;display:none;}	
+	#bot ul a {color:#fff;}
+	#bot ul li {height:3.5em;line-height:3.5em; background:#434242;}
+	
+	
+	footer {color:#fff; text-align:center;background:#131313;
+	font-size:0.8em;position:relative;
+	padding-bottom:5em;margin-top:5em;}
+	footer .text {width:80%;margin:0 auto; }
+	
+	.sns {margin:30px 0;}
+	.sns li {display:inline-block;margin-right:1%;}
+	.sns img {width:90%;}
+	
+	
+	.tt {font-size:1em;margin-bottom:20px;}
+	footer h2 {padding:60px 0 35px 0;}
+	
+

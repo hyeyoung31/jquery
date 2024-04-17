@@ -1,0 +1,251 @@
+﻿<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>html5문서</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/menu.css">
+		<link rel="stylesheet" href="css/formmap01.css">
+		<link rel="stylesheet" href="css/modal.css">
+		<!--<script src="js/jquery-1.11.2.min.js"></script>-->	
+		<script src="js/jquery-1.8.1.min.js"></script>
+		<script src="js/jquery.bxslider.min.js"></script>
+		<script src="js/jquery.scrollTo.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/modal.js"></script>
+	
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
+			function initialize() {
+			  var mapOptions = {
+				zoom: 14,
+				scrollwheel: false,
+				center: new google.maps.LatLng(37.556316, 126.935820)
+			  };
+			  var map = new google.maps.Map(document.getElementById('googleMap'),
+				  mapOptions);
+			  var marker = new google.maps.Marker({
+				position: map.getCenter(),
+				animation:google.maps.Animation.BOUNCE,
+				icon: 'image/locred.png',
+				map: map
+			  });
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+	
+	</head>
+	
+	<body>
+	<!-- http://maps.google.com -->
+	
+	<div class="modal_back"></div>
+	<header>
+ <h2><a href="#"><img src="img/clogo.jpg" alt=""></a></h2>
+  <button class="hamburger">&#9776;</button>
+  <img class="s" src="image/ss.png" alt="">
+  </header>
+
+  <div class="menu">
+	<ul>
+	 <li> <a href="#banner_wrap" class="iframe">BRAND<img class="btn" src="img/arrow-down.png" alt=""></a>
+	 <ul class="sub">
+		  <li><a href="#">menu1</a></li>
+		  <li><a href="#">menu2</a></li>
+	  </ul>
+	 </li>
+	  <li><a href="#section">LINK TWO<img class="btn" src="img/arrow-down.png" alt=""></a>
+	  <ul class="sub">
+		  <li><a href="#">menu1</a></li>
+		  <li><a href="#">menu2</a></li>
+		  <li><a href="#">menu3</a></li>
+	  </ul>
+	  </li>
+	 <li> <a href="#footer">LINK THREE<img class="btn" src="img/arrow-down.png" alt=""></a>
+	 <ul class="sub">
+		  <li><a href="#">menu1</a></li>
+		  <li><a href="#">menu2</a></li>
+		  <li><a href="#">menu3</a></li>
+	  </ul>
+	 </li>
+	  <li><a href="#banner_wrap">LINK FOUR<img class="btn" src="img/arrow-down.png" alt=""></a>
+	  <ul class="sub">
+		  <li><a href="#">menu1</a></li>
+		  <li><a href="#">menu2</a></li>
+		  <li><a href="#">menu3</a></li>
+	  </ul>
+	  </li>
+	  <li><a href="#cnt_form">LINK FIVE<img class="btn" src="img/arrow-down.png" alt=""></a>
+	  <ul class="sub">
+		  <li><a href="#">menu1</a></li>
+		  <li><a href="#">menu2</a></li>
+	  </ul>
+	  </li>
+	</ul>
+	<button class="cross">&#735;</button>
+  </div> 
+	
+	
+	
+	<!-- 배너  컨텐츠부분-->
+		<div id="main_image">
+		
+			<ul class="b2">
+				 <li><img src="img/f3000.jpg" alt="img1" ></li>
+				 <li><img src="img/f3001.jpg" alt="img1" ></li>
+				 <li><img src="img/f3000.jpg" alt="img1" ></li>
+				 <li><img src="img/f3001.jpg" alt="img1" ></li>
+			</ul>
+			
+			
+	<div id="arrow">
+<a class="prev" href="#"><img src="image/arrow_l1.png" alt="이전"></a>
+<a class="next" href="#"><img src="image/arrow_r1.png" alt="다음"></a>	
+	</div>
+
+	<ul id="book_roll">
+		<li id="btn0"><a href="#"><img src="image/state_over.png" alt="활성화 상태"></a></li>
+		<li id="btn1"><a href="#">
+		<img src="image/state_out.png" alt="비활성화 상태"></a></li>
+		<li id="btn2"><a href="#">
+		<img src="image/state_out.png" alt="비활성화 상태"></a></li>
+		<li id="btn3"><a href="#">
+		<img src="image/state_out.png" alt="비활성화 상태"></a></li>
+	</ul>
+</div>
+
+
+	<h2 class="title">PRODUCT</h2>
+	 <div id="banner_wrap">
+      <ul id="slide_banner">
+         <li><a href="#"><img src="image/d1.jpg" alt="사진1"></a>
+		 <span>메뉴1</span></li>
+         <li><a href="#"><img src="image/d2.png" alt="사진1"></a>
+		 <span>메뉴2</span></li>
+         <li><a href="#"><img src="image/d3.png" alt="사진1"></a>
+		 <span>메뉴3</span></li>
+		    <li><a href="#"><img src="image/d4.png" alt="사진1"></a>
+			<span>메뉴4</span></li>
+         <li><a href="#"><img src="image/d5.png" alt="사진1"></a>
+		 <span>메뉴5</span></li>
+      </ul>
+<p><a href="#" id="prevBtn"><img src="image/ar2.png" alt="이전버튼"></a></p>
+<p><a href="#" id="nextBtn"><img src="image/ar1.png" alt="다음버튼"></a></p>
+   </div>
+
+   
+		<section id="section">
+		<article>
+		<h2>EVENT</h2>
+		<ul>
+			<li><a href="#"><img src="image/list01.jpg" alt=""></a></li>
+			<li><a href="#"><img src="image/list02.jpg" alt=""></a></li>
+			<li><a href="#"><img src="image/list03.jpg" alt=""></a></li>
+			<li><a href="#"><img src="image/list04.jpg" alt=""></a></li>
+			<li><a href="#"><img src="image/list01.jpg" alt=""></a></li>
+			<li><a href="#"><img src="image/list02.jpg" alt=""></a></li>
+		</ul>
+		</article>
+		</section>
+	
+
+		<div id="imgbox">
+		    <img src="img/b2_1.jpg" alt="">
+		</div>
+			
+		<!-- <div id="new">
+			<ul class="new">
+				<li><img src="img/coff.jpg" alt=""></li>
+				<li><img src="img/list01.jpg" alt=""></li>		
+				<li><img src="img/list02.jpg" alt=""></li>
+				<li><img src="img/list03.jpg" alt=""></li>
+				<li><img src="img/list04.jpg" alt=""></li>
+			</ul>		
+		</div> -->
+		
+		<div id="back">
+			<img src="img/back1000b.jpg" alt="">
+		</div>
+		
+				<div class="map">						
+			     <h2>located THE MAP</h2>
+					<div id="googleMap" style="width:90%;height:300px;"></div>
+				</div>
+
+				
+				
+		
+		<div class="title_sec">
+					<h1>Contact Info</h1>
+					<h2>BEST BRAND</h2>
+		</div>	
+		<div id="cnt_form">
+		<form id="contact-form" class="contact" name="contact-form"
+		method="post" action="send-mail.php">
+			<div class="form-group">
+			<input type="text" name="name" class="form-control" 
+			required="required" placeholder="Your Name">
+			</div>
+			<div class="form-group">
+			<input type="email" name="email" class="form-control" 
+			required="required" placeholder="Your Email">
+			</div> 
+			<div class="form-group">
+			<textarea name="message" id="message" required="required" 
+			class="form-control" rows="8" placeholder="Message"></textarea>
+			</div> 
+			<div class="form-group">
+					<button type="submit" class="btn">Send</button>
+			</div>
+		</form> 
+	</div>
+	
+
+	<div id="bot">
+	<p>list1<img class="btn" src="img/arrow-down.png" alt=""></p>
+	<ul class="list">
+	<li><a href="#">title1</a></li>
+	<li><a href="#">title1</a></li>
+	<li><a href="#">title1</a></li>
+	<li><a href="#">title1</a></li>
+	</ul>
+	<p>list2<img  class="btn" src="img/arrow-down.png" alt=""></p>
+	<ul class="list">
+	<li><a href="#">title1</a></li>
+	<li><a href="#">title1</a></li>
+	<li><a href="#">title1</a></li>
+	<li><a href="#">title1</a></li>
+	</ul>
+	<p>list3<img  class="btn" src="img/arrow-down.png" alt=""></p>
+	<ul class="list">
+	<li><a href="#">title1</a></li>
+	<li><a href="#">title1</a></li>
+	<li><a href="#">title1</a></li>
+	<li><a href="#">title1</a></li>
+	</ul>
+	</div>
+	
+	
+		
+		<footer id="footer">
+		<h2><img src="image/logo.png" alt=""></h2>
+		<ul class="sns">
+		<li><a href="#"><img src="image/sns_f.png" alt=""></a></li>
+		<li><a href="#"><img src="image/sns_t.png" alt=""></a></li>
+		<li><a href="#"><img src="image/sns_i.png" alt=""></a></li>
+		<li><a href="#"><img src="image/sns_g.png" alt=""></a></li>
+		</ul>
+		<p id ="sns"><img src="image/sns.png" alt=""> </p>
+		<p class="tt">&copy; SPOT 2018</p>
+		<p class="tt">Copyright &copy;  SAMPLE co., Ltd. All rights reserved</p>
+		<p class="text">본 사이트는 상업적 목적이 아닌
+개인 포트폴리오 용도로 제작되었습니다.홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다.</p>
+		</footer>
+	</body>
+
+	
+</html>
+
+
