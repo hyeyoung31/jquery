@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+<style>
+div {width:200px;height:200px;background:blue; margin-top:300px;}
+</style>
+<script>
+  $(function(){
+    const a1=$("div").offset().top;
+    alert(a1);
+  });  
+
+  /*
+.scrollTop() 은 브라우저 자체와 스크롤된 거리를 계산 사용자가 스크롤 한 거리 (가변적)
+.offset().top 은 브라우저가 아닌 특정 요소의 문서 끝에서 부터의  y축 위치를 계산 
+선택자.offset().top() ==> 선택자의 문서 위쪽  끝에서부터의 세로거리 값 / 해당 선택자를 기준으로 문서 위쪽 끝에서부터 선택자가 위치하고 있는 y축의 거리값.
+결과는 즉, 변수 a1에 <div>의 문서 내 y축 위치 값을 저장함.
+*/
+</script>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

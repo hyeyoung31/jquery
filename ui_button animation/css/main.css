@@ -1,0 +1,41 @@
+@charset" utf-8";
+
+body {   background-color: #656565;}
+button {    outline: none;}
+.page-main {    position: relative;}
+.page-main > div {    padding: 50px 0 100px;}
+.page-main > div h2 {
+    color: #fff; text-align: center; margin: 0 0 50px;
+    font-weight: normal;  letter-spacing: 0.15rem; }
+#buttons1 {    background-color: #ebc000;}    
+#buttons2 {    background-color: #01b169;    height: 340px;}
+#buttons1 .inner,
+#buttons2 .inner
+{    position: relative;    width: 976px;    margin: 0 auto;}
+#buttons1 button {display: block;float: left;width: 224px; height: 80px;
+                  margin: 0 10px 20px;padding: 0;font-size: 16px;
+                  letter-spacing: 0.15rem;color: #ebc000;background: #fff;
+                  border: none;border-radius: 20px;}
+
+#buttons2 button { display: block;  position: absolute;  width: 224px;   
+                   height: 224px;  overflow: hidden;  padding: 0 0 35px;
+                   font-size: 16px;  letter-spacing: 1px;  color: #01b169;
+                   background: #fff;border: none;border-radius: 112px;}
+#buttons2 button:nth-child(1) {    left: 10px;}
+#buttons2 button:nth-child(2) {    left: 254px;}
+#buttons2 button:nth-child(3) {    left: 498px;}
+#buttons2 button:nth-child(4) {    left: 742px;}   
+
+
+#buttons1 button {   border: solid 0px rgba(174,94,155,1.0);
+                     position: relative;}
+
+#buttons1 button .bg {position: absolute;top: 0;left: 0;width: 0;
+                      height: 100%;  overflow: hidden;}
+
+#buttons1 button span span { display: block;width: 224px;height: 80px;
+ line-height: 80px; color: #fff; background:#ae5e9b;border-radius: 20px;}
+
+ #buttons2 button img:first-child {position: absolute; }
+ #buttons2 button img:nth-child(2) {    opacity: 0;}
+ 
