@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css"/>
+<style>
+    .animate__pulse{
+        animation-duration:2s;
+        animation-iteration-count: 3;
+    }
+
+    h1:hover{
+        animation:pulse 1s;
+    }
+    
+    section{
+        height:40vh;
+    }
+
+    section[class^="animate__"]{
+        opacity:0;
+    }
+</style>
+</head>
+<body>
+    <h1 class="animate__animated ">A simple example of using Animate.css</h1>
+    
+    <p>
+        Here's the element that will be animated.
+    </p>
+    
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo, magnam magni fuga excepturi, iure obcaecati perferendis minima tempore ab quasi dolorum. Illo, dolorum iusto consequatur quo modi doloremque ducimus?</p>
+    </section>
+    
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo, magnam magni fuga excepturi, iure obcaecati perferendis minima tempore ab quasi dolorum. Illo, dolorum iusto consequatur quo modi doloremque ducimus?</p>
+    </section>
+
+    <section class="animate__animated" data-effect="animate__fadeInBottomLeft">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo, magnam magni fuga excepturi, iure obcaecati perferendis minima tempore ab quasi dolorum. Illo, dolorum iusto consequatur quo modi doloremque ducimus?</p>
+    </section>
+
+    <section class="animate__animated" data-effect="animate__fadeInBottomRight">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo, magnam magni fuga excepturi, iure obcaecati perferendis minima tempore ab quasi dolorum. Illo, dolorum iusto consequatur quo modi doloremque ducimus?</p>
+    </section>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+    /*윈도우에 스크롤이 생기면 할일 
+    그 양이 각각의 section들이 화면상에서 떨어진 거리(-500보다 많으면) 그 섹션에 클래스명
+    animate_animated 추가 */
+
+     $(window).scroll(function(){
+        var sct = $(this).scrollTop();
+        $('section').each(function(){
+            var sectionOST = $(this).offset().top - 500;
+            var sectionEffect = $(this).attr('data-effect');
+          if(sct >= sectionOST){
+            $(this).addClass(sectionEffect);
+          }
+        });
+     })
+    </script>
+</body>
+</html>
